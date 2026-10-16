@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        crystal-version: ["1.19.0", "1.19.1"]
+        crystal-version: ["1.19.0", "1.22.0"]
 
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +32,7 @@ jobs:
         run: crystal tool format --check src/ spec/
 
       - name: Run linter
-        run: bin/ameba
+        run: crystal run lib/ameba/bin/ameba.cr --
 
       - name: Build CLI
         run: shards build markdown

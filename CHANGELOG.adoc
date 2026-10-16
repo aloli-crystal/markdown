@@ -3,6 +3,10 @@
 :toc-title: Versions
 :toclevels: 2
 
+== v0.1.9 — 2026-10-16
+
+* ameba 1.7 and Crystal 1.22.0 in CI; new rules applied, no behaviour change.
+
 == v0.1.8 — 2026-07-29
 
 * Update deep `require`s after the asciicrystal extensions renamed their internal source dirs (`src/asciidoctor_*` → `src/asciicrystal_*`).

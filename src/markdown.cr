@@ -114,40 +114,40 @@ module Markdown
   # Generate a sample Markdown document to demonstrate conversion capabilities.
   def self.sample_markdown : String
     <<-MD
-    # Crystal Markdown
+      # Crystal Markdown
 
-    A universal Markdown converter for Crystal.
+      A universal Markdown converter for Crystal.
 
-    ## Features
+      ## Features
 
-    - **PDF** output via asciicrystal-pdf
-    - **EPUB** output via asciicrystal-epub3
-    - **HTML** output via asciicrystal
-    - **AsciiDoc** intermediate format via kramdown-asciidoc
+      - **PDF** output via asciicrystal-pdf
+      - **EPUB** output via asciicrystal-epub3
+      - **HTML** output via asciicrystal
+      - **AsciiDoc** intermediate format via kramdown-asciidoc
 
-    ## Code Example
+      ## Code Example
 
-    ```crystal
-    html = Markdown.to_html("# Hello\\n\\nWorld.")
-    ```
+      ```crystal
+      html = Markdown.to_html("# Hello\\n\\nWorld.")
+      ```
 
-    ## Table
+      ## Table
 
-    | Format   | Extension | Library                    |
-    |----------|-----------|----------------------------|
-    | HTML     | .html     | asciicrystal        |
-    | PDF      | .pdf      | asciicrystal-pdf    |
-    | EPUB     | .epub     | asciicrystal-epub3  |
-    | AsciiDoc | .adoc     | kramdown-asciidoc  |
+      | Format   | Extension | Library                    |
+      |----------|-----------|----------------------------|
+      | HTML     | .html     | asciicrystal        |
+      | PDF      | .pdf      | asciicrystal-pdf    |
+      | EPUB     | .epub     | asciicrystal-epub3  |
+      | AsciiDoc | .adoc     | kramdown-asciidoc  |
 
-    ## Blockquote
+      ## Blockquote
 
-    > Markdown is the universal input format.
-    > AsciiDoc is the universal intermediate format.
+      > Markdown is the universal input format.
+      > AsciiDoc is the universal intermediate format.
 
-    ---
+      ---
 
-    *Built with Crystal and the Asciidoctor ecosystem.*
-    MD
+      *Built with Crystal and the Asciidoctor ecosystem.*
+      MD
   end
 end
